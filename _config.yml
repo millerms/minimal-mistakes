@@ -153,6 +153,9 @@ timezone: ""
 paginate: 5
 paginate_path: /page:num/
 
+atom_feed:
+hide: TRUE
+
 # Optional Integrations (commented out for future use)
 
 # comments:
