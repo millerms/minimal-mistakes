@@ -114,3 +114,88 @@ input[type="submit"].btn-modern {
 .btn-modern--ghost:focus {
   background-color: color-mix(in srgb, var(--btn-bg) 22%, transparent);
 }
+
+/* Icons inside buttons */
+.btn-modern__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  font-size: 1em; /* inherits from button */
+}
+
+.btn-modern__icon--left { margin-right: .45em; }
+.btn-modern__icon--right { margin-left: .45em; }
+
+.btn-modern svg.btn-modern__icon { width: 1em; height: 1em; }
+
+/* Inline badge/pill inside buttons */
+.btn-modern__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .55em;
+  padding: .15em .5em;
+  font-weight: 800;
+  border-radius: 999px;
+  background-color: rgba(255,255,255,.22);
+  color: #fff;
+}
+
+.btn-modern--outline .btn-modern__badge {
+  background-color: var(--btn-bg);
+  color: #fff;
+}
+
+.btn-modern--sm .btn-modern__badge { font-size: .85em; padding: .1em .45em; }
+.btn-modern--lg .btn-modern__badge { font-size: 1em; padding: .18em .6em; }
+
+/* Icon-only variant */
+.btn-modern--icon {
+  width: 2.75em;
+  height: 2.75em;
+  padding: 0;
+  border-radius: 50%;
+  justify-content: center;
+}
+.btn-modern--icon.btn-modern--sm { width: 2.25em; height: 2.25em; }
+.btn-modern--icon.btn-modern--lg { width: 3.1em; height: 3.1em; }
+
+/* Block (full-width) */
+.btn-modern--block { width: 100%; justify-content: center; }
+
+/* Toggle state (for ARIA pressed) */
+.btn-modern[aria-pressed="true"] {
+  transform: translateY(0);
+  box-shadow:
+    inset 0 2px 6px rgba(0,0,0,.18),
+    0 8px 16px rgba(0,0,0,.18);
+}
+
+/* Loading state */
+.btn-modern.is-loading,
+.btn-modern[aria-busy="true"] {
+  pointer-events: none;
+}
+
+.btn-modern.is-loading::after,
+.btn-modern[aria-busy="true"]::after {
+  content: "";
+  position: absolute;
+  width: 1em; height: 1em;
+  top: 50%; left: 50%; transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.55);
+  border-top-color: #fff;
+  animation: btn-spin .7s linear infinite;
+}
+
+.btn-modern--outline.is-loading::after,
+.btn-modern--outline[aria-busy="true"]::after {
+  border-color: color-mix(in srgb, var(--btn-bg) 55%, transparent);
+  border-top-color: var(--btn-bg);
+}
+
+@keyframes btn-spin { to { transform: translate(-50%, -50%) rotate(360deg); } }

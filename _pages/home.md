@@ -30,6 +30,32 @@ This is a button to the Temp page:
   </a>
 </p>
 
+<!-- More button variants -->
+<p class="reveal">
+  <!-- Icon-only buttons (use aria-label) -->
+  <a class="btn-modern btn-modern--icon" href="/temp/" aria-label="Play">
+    <i class="fas fa-play" aria-hidden="true"></i>
+  </a>
+  &nbsp;
+  <a class="btn-modern btn-modern--icon btn-modern--outline" href="/temp/" aria-label="Add">
+    <i class="fas fa-plus" aria-hidden="true"></i>
+  </a>
+  &nbsp;
+  <a class="btn-modern btn-modern--icon btn-modern--ghost" href="/temp/" aria-label="Favorite">
+    <i class="fas fa-heart" aria-hidden="true"></i>
+  </a>
+</p>
+
+<div class="reveal" style="max-width: 520px;">
+  <!-- Block (full-width) -->
+  <a class="btn-modern btn-modern--block" href="/temp/" aria-label="Full width action">Full Width Action</a>
+  
+  <!-- Loading state -->
+  <a class="btn-modern is-loading" href="#" aria-busy="true" aria-label="Loading">
+    Loading…
+  </a>
+</div>
+
 <hr>
 
 <!-- CTA Banner -->
