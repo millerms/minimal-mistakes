@@ -151,6 +151,13 @@ This is a button to the Temp page:
   </figcaption>
 </figure>
 
+<!-- References demo -->
+<h3 class="reveal">References</h3>
+<ol class="refs reveal">
+  {% include reference.html pmid="31452104" num="1" %}
+  {% include reference.html pmid="30049270" num="2" %}
+</ol>
+
 <!-- Chips / Tags -->
 <p class="reveal">
   <span class="chip"><i class="fas fa-tag chip__icon chip__icon--left" aria-hidden="true"></i>Default</span>

@@ -47,6 +47,7 @@ footer_scripts:
   - /assets/js/reveal.js
   - /assets/js/tactile.js
   - /assets/js/ui.js
+  - /assets/js/refs.js
 
 # Theme settings
 plugins:
