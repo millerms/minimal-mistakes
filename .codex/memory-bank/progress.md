@@ -13,6 +13,7 @@ priority = "medium"
 ## In Progress
 - Memory Bank initialized and linked in config.
 - Meta, SEO, and a11y audit to verify compliance.
+- Documentation pages added; iterate with feedback.
 
 ## Blockers
 - None identified yet.
@@ -20,6 +21,7 @@ priority = "medium"
 ## Upcoming
 - Validate dark mode styles across key pages.
 - Ensure JS loads non-blocking and remains accessible.
+- Expand docs with troubleshooting and deployment notes if needed.
 
 ## Known Issues
 - Resolved duplicate `custom.css` inclusion by removing `css: "custom"` from

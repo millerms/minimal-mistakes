@@ -4,3 +4,15 @@ main:
     url: /
   - title: "Temp"
     url: /temp/
+  - title: "Docs"
+    children:
+      - title: "Getting Started"
+        url: /docs/getting-started/
+      - title: "Components"
+        url: /docs/components/
+      - title: "References"
+        url: /docs/references/
+      - title: "Theming"
+        url: /docs/theming/
+      - title: "Advanced"
+        url: /docs/advanced/

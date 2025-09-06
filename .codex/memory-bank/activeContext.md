@@ -22,6 +22,9 @@ priority = "high"
   partials in `_sass/custom/` (`_tokens.scss`, `_glass.scss`, `_masthead.scss`,
   `_reveal.scss`, `_ripple.scss`, `_theme-toggle.scss`, `_footer.scss`). Output
   path remains `/assets/css/custom.css`.
+- Added rich UI modules (buttons, cards, accordion, tabs, tooltips, CTA, chips,
+  alerts, progress, skeleton, modal), PubMed refs + inline citations, and docs
+  pages under `/docs/*`. Created `.codex/agents/template-docs-agent.md`.
 
 ## Next Steps
 - Audit `_includes/head.html` meta tags for completeness (title, description, OG/Twitter, canonical).
