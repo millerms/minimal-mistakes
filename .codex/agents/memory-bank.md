@@ -81,12 +81,12 @@ Create additional files/folders within memory-bank/ when they help organize:
 
 This is the recommended file listing and their purposes:
 
-- [projectbrief.md](./projectbrief.md) — Project goals, scope, and non-negotiables.
-- [productContext.md](./productContext.md) — User needs, use cases, and UX principles.
-- [techContext.md](./techContext.md) — Tech stack, constraints, and dev setup.
-- [systemPatterns.md](./systemPatterns.md) — Patterns, architecture, and reusable components.
-- [activeContext.md](./activeContext.md) — Current focus, recent changes, ongoing considerations.
-- [progress.md](./progress.md) — Status tracker for what's done, blocked, or upcoming.
+- [projectbrief.md](../memory-bank/projectbrief.md) — Project goals, scope, and non-negotiables.
+- [productContext.md](../memory-bank/productContext.md) — User needs, use cases, and UX principles.
+- [techContext.md](../memory-bank/techContext.md) — Tech stack, constraints, and dev setup.
+- [systemPatterns.md](../memory-bank/systemPatterns.md) — Patterns, architecture, and reusable components.
+- [activeContext.md](../memory-bank/activeContext.md) — Current focus, recent changes, ongoing considerations.
+- [progress.md](../memory-bank/progress.md) — Status tracker for what's done, blocked, or upcoming.
 
 ## Core Workflows
 
