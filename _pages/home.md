@@ -115,6 +115,16 @@ This is a button to the Temp page:
 <!-- Tooltip demo -->
 <p class="reveal">Hover or focus this <a href="#" data-tooltip="A helpful tooltip!">tooltip link</a> to see more.</p>
 
+<!-- Quote / Testimonial -->
+<figure class="quote reveal">
+  <blockquote>
+    <p>This template strikes a great balance of clean defaults and modern UI elements. It feels fast, accessible, and fun to build with.</p>
+  </blockquote>
+  <figcaption>
+    <span class="quote__author"><strong>Alex Doe</strong><span class="quote__meta">Product Designer</span></span>
+  </figcaption>
+</figure>
+
 <!-- Chips / Tags -->
 <p class="reveal">
   <span class="chip"><i class="fas fa-tag chip__icon chip__icon--left" aria-hidden="true"></i>Default</span>
