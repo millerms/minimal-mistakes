@@ -1,5 +1,5 @@
 document.addEventListener('click', (e)=>{
-  const t = e.target.closest('.btn,.button,.zen-button');
+  const t = e.target.closest('.btn,.button,.zen-button,.btn-modern');
   if(!t) return;
   const r = document.createElement('span');
   const rect = t.getBoundingClientRect();
@@ -11,4 +11,3 @@ document.addEventListener('click', (e)=>{
   t.appendChild(r);
   setTimeout(()=> r.remove(), 450);
 });
-

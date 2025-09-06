@@ -9,3 +9,11 @@ header:
 
 Test home page
 
+This is a button to the Temp page:
+
+<p>
+  <a class="btn-modern btn-modern--lg reveal" href="/temp/" aria-label="Go to Temp page">
+    View Temp Page
+  </a>
+  
+</p>

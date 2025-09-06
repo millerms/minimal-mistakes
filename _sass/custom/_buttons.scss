@@ -1,0 +1,88 @@
+/* Modern button component, theme-aware */
+.btn-modern,
+a.btn-modern,
+button.btn-modern,
+input[type="button"].btn-modern,
+input[type="submit"].btn-modern {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .65em 1.1em;
+  border-radius: .75em;
+  border: 0;
+  position: relative;
+  overflow: hidden; /* contains ripple and sheen */
+
+  /* Theme-aware background with subtle gloss overlay */
+  --btn-bg: var(--c-link);
+  --btn-bg-hover: var(--c-link-hover);
+  background-color: var(--btn-bg);
+  background-image: linear-gradient(
+    180deg,
+    rgba(255,255,255,.18),
+    rgba(255,255,255,.10) 45%,
+    rgba(255,255,255,.06) 60%,
+    rgba(0,0,0,.08) 100%
+  );
+  background-blend-mode: overlay;
+  color: #fff !important;
+  font-weight: 800;
+  letter-spacing: .01em;
+  text-decoration: none !important;
+  box-shadow: 0 10px 20px rgba(0,0,0,.18);
+  /* top inner highlight */
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.25),
+    0 10px 20px rgba(0,0,0,.18);
+  transition: transform var(--t-fast) var(--e-out),
+              box-shadow var(--t-fast) var(--e-out),
+              background-color var(--t-fast) var(--e-out),
+              color var(--t-fast) var(--e-out);
+}
+
+.btn-modern:hover,
+.btn-modern:focus { 
+  background-color: var(--btn-bg-hover);
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.25),
+    0 14px 24px rgba(0,0,0,.22);
+}
+
+.btn-modern:active { transform: translateY(0); box-shadow: 0 8px 16px rgba(0,0,0,.18); }
+
+.btn-modern:focus-visible {
+  outline: 2px solid var(--c-accent);
+  outline-offset: 3px;
+}
+
+/* Dark mode text contrast assurance */
+[data-theme='dark'] .btn-modern { color: #fff !important; }
+
+/* Sizes */
+.btn-modern--sm { padding: .5em .9em; border-radius: .6em; font-weight: 700; }
+.btn-modern--lg { padding: .8em 1.25em; border-radius: .9em; font-size: 1.05em; }
+
+/* Sheen sweep on hover */
+.btn-modern::before {
+  content: "";
+  position: absolute;
+  inset: 0 auto 0 -60%;
+  width: 50%;
+  transform: translateX(-100%) skewX(-20deg);
+  background: linear-gradient(
+    120deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,.35) 30%,
+    rgba(255,255,255,0) 60%
+  );
+  pointer-events: none;
+  opacity: 0;
+  transition: transform .55s var(--e-out), opacity .35s var(--e-out);
+}
+
+.btn-modern:hover::before,
+.btn-modern:focus::before {
+  opacity: .85;
+  transform: translateX(260%) skewX(-20deg);
+}

@@ -1,5 +1,5 @@
 /* CSS: Button Ripple (optional) */
-.btn, .button, .zen-button { position: relative; overflow: hidden; }
+.btn, .button, .zen-button, .btn-modern { position: relative; overflow: hidden; }
 
 .ripple {
   position: absolute; border-radius: 50%; pointer-events: none; mix-blend-mode: screen;
@@ -8,4 +8,3 @@
 }
 
 @keyframes ripple { to { transform: scale(1); opacity: 0; } }
-
