@@ -60,6 +60,35 @@
       doiEl.parentElement.style.display = '';
     }
   }
+  function buildCitationText(el) {
+    try {
+      const title = (el.querySelector('.ref-title')?.textContent || '').trim();
+      const authors = (el.querySelector('.ref-authors')?.textContent || '').trim();
+      const journal = (el.querySelector('.ref-journal')?.textContent || '').trim();
+      const year = (el.querySelector('.ref-year')?.textContent || '').trim();
+      const doiNode = el.querySelector('.ref-doi');
+      const doi = (doiNode && doiNode.textContent || '').trim();
+      const parts = [];
+      if (authors) parts.push(authors + '.');
+      if (title) parts.push(title + '.');
+      if (journal) parts.push(journal + (year ? ' ' + year + '.' : '.'));
+      if (doi) parts.push('DOI: ' + doi);
+      return parts.join(' ');
+    } catch (_) { return ''; }
+  }
+  function onCopyClick(e) {
+    const btn = e.target.closest('[data-copy-citation]');
+    if (!btn) return;
+    const el = btn.closest('.ref-item');
+    if (!el) return;
+    const text = buildCitationText(el);
+    if (!text) return;
+    navigator.clipboard.writeText(text).then(() => {
+      const prev = btn.textContent;
+      btn.textContent = 'Copied!';
+      setTimeout(() => { btn.textContent = prev; }, 1200);
+    }).catch(() => {});
+  }
   async function enhance() {
     try {
       const { nodes, ids } = collectPmids();
@@ -76,5 +105,5 @@
     }
   }
   document.addEventListener('DOMContentLoaded', enhance);
+  document.addEventListener('click', onCopyClick);
 })();
-

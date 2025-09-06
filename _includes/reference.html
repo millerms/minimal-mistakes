@@ -6,6 +6,7 @@
 {% assign year = include.year | default: '' %}
 {% assign doi = include.doi | default: '' %}
 {% assign url = include.url | default: '' %}
+{% assign back = include.back | default: '' %}
 
 {% comment %}
 Usage:
@@ -29,7 +30,8 @@ Optional: title, authors, journal, year, doi, url for static fallback.
     <div class="ref-actions">
       {% if pmid %}<span class="ref-badge ref-badge--pmid" title="PubMed ID">PMID {{ pmid }}</span>{% endif %}
       <a class="ref-doi ref-link" {% unless doi %}style="display:none"{% endunless %} href="{% if doi %}https://doi.org/{{ doi }}{% endif %}">DOI <span class="ref-doi">{{ doi }}</span></a>
+      <button class="btn-modern btn-modern--sm btn-modern--outline" type="button" data-copy-citation>Copy</button>
+      {% if back %}<a class="ref-link" href="#{{ back }}">Back to text</a>{% endif %}
     </div>
   </div>
 </li>
-

@@ -10,7 +10,7 @@ header:
 Test home page
 {: .reveal .reveal--up }
 
-This is a button to the Temp page:
+This is a button to the Temp page{% include cite.html pmid="31452104" %} and another action{% include cite.html pmid="30049270" %}:
 {: .reveal .reveal--up }
 
 <p>
@@ -154,8 +154,8 @@ This is a button to the Temp page:
 <!-- References demo -->
 <h3 class="reveal">References</h3>
 <ol class="refs reveal">
-  {% include reference.html pmid="31452104" num="1" %}
-  {% include reference.html pmid="30049270" num="2" %}
+  {% include reference.html pmid="31452104" num="1" back="cite-31452104-1" %}
+  {% include reference.html pmid="30049270" num="2" back="cite-30049270-2" %}
 </ol>
 
 <!-- Chips / Tags -->
