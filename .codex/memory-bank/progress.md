@@ -22,4 +22,5 @@ priority = "medium"
 - Ensure JS loads non-blocking and remains accessible.
 
 ## Known Issues
-- To be filled after first Lighthouse/a11y pass.
+- Resolved duplicate `custom.css` inclusion by removing `css: "custom"` from
+  `_config.yml` defaults. Global include in `_includes/head.html` is authoritative.
