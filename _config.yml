@@ -63,6 +63,9 @@ navigation:
   - title: "Home"
     url: "/"
 
+# Theme default: 'system' | 'light' | 'dark'
+theme_default: system
+
 # Collections
 collections:
   pages:
