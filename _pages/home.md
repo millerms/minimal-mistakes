@@ -3,6 +3,7 @@ layout: splash
 title: Temp home
 tagline: "Temp home page sub"
 permalink: /
+paginate: 1
 header:
   overlay_color: "#0c365cff"
 ---
@@ -57,6 +58,41 @@ This is a button to the Temp page{% include cite.html pmid="31452104" %} and ano
 </div>
 
 <hr>
+
+<!-- Docs Quick Links -->
+<h3 class="reveal">Docs Quick Links</h3>
+<div class="card-grid reveal" style="margin-top: .25rem;">
+  <a class="card--link" href="/docs/getting-started/" aria-label="Getting Started">
+    <article class="card">
+      <div class="card__body">
+        <h4 class="card__title">Getting Started</h4>
+        <p class="card__text">Install and run locally in minutes.</p>
+      </div>
+    </article>
+  </a>
+  <a class="card--link" href="/docs/components/" aria-label="Components">
+    <article class="card">
+      <div class="card__body">
+        <h4 class="card__title">Components</h4>
+        <p class="card__text">Buttons, cards, tabs, tooltips, and more.</p>
+      </div>
+    </article>
+  </a>
+  <a class="card--link" href="/docs/references/" aria-label="References">
+    <article class="card">
+      <div class="card__body">
+        <h4 class="card__title">References</h4>
+        <p class="card__text">Inline cites and PubMed metadata.</p>
+      </div>
+    </article>
+  </a>
+</div>
+
+<p class="reveal" style="display: inline-flex; gap: .5rem; flex-wrap: wrap;">
+  <a class="btn-modern" href="/docs/">All Docs</a>
+  <a class="btn-modern btn-modern--outline" href="/docs/components/">Browse Components</a>
+  <a class="btn-modern btn-modern--ghost" href="/docs/getting-started/">Start Here</a>
+</p>
 
 <!-- CTA Banner -->
 <div class="cta-banner reveal" data-tooltip="Try me!">

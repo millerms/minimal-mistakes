@@ -3,6 +3,7 @@ layout: single
 title: Getting Started
 description: Quick start guide for this Minimal Mistakes template — install, run, and understand the structure.
 permalink: /docs/getting-started/
+paginate: 4
 seo: true
 ---
 

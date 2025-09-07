@@ -3,6 +3,7 @@ layout: single
 title: Components
 description: Theme‑aware UI building blocks — buttons, cards, accordion, tabs, tooltips, CTA, chips, alerts, progress, skeleton, modal.
 permalink: /docs/components/
+paginate: 5
 seo: true
 ---
 

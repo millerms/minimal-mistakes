@@ -5,6 +5,7 @@ subtitle: A barebones Jekyll starter template
 permalink: /temp/
 description: "Temp Desc"
 tagline: "Temp Tag"
+paginate: 2
 header:
   overlay_color: "#073f18ff"
 ---

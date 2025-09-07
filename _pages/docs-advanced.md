@@ -3,6 +3,7 @@ layout: single
 title: Advanced & Tips
 description: Accessibility, performance, and authoring tips to keep pages clean and fast.
 permalink: /docs/advanced/
+paginate: 8
 seo: true
 ---
 

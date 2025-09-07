@@ -3,6 +3,7 @@ layout: single
 title: Theming
 description: Customize palettes, tokens, and component styles with a clean, modular SCSS setup.
 permalink: /docs/theming/
+paginate: 7
 seo: true
 ---
 

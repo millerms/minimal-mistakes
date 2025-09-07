@@ -5,6 +5,7 @@ main:
   - title: "Temp"
     url: /temp/
   - title: "Docs"
+    url: /docs/
     children:
       - title: "Getting Started"
         url: /docs/getting-started/
